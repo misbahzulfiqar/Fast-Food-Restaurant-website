@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misbah Zulfiqar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        .maincontainer {
+            width: 100%;
+            margin: auto;
+        }
+
+        header img {
+            width: 100%;
+            height: 650px;
+        }
+
+        .tophead {
+            width: 75%;
+            margin: auto;
+            margin-top: -630px;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            display: flex;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 15px;
+            padding: 14px;
+            color: white;
+        }
+
+        li i {
+            padding-left: 20px;
+        }
+
+
+        .list a {
+            color: orange;
+        }
+
+
+        li a:hover {
+            background-color: black;
+            border-radius: 50px;
+            margin: 10px;
+        }
+
+        .nav {
+            padding-right: 40px;
+        }
+
+        .bottomhead {
+
+            width: 75%;
+            margin: auto;
+            margin-top: 105px;
+            color: white;
+        }
+
+        .name {
+
+            font-family: "Sofia", sans-serif;
+            font-size: 45px;
+        }
+
+        .bottomhead p {
+            margin-top: 12px;
+        }
+
+        .heading {
+            font-family: "Sofia", sans-serif;
+            margin-right: 218px;
+            font-size: 30px;
+        }
+
+        .tophead i {
+            margin-inline-end: 10px;
+        }
+
+        button {
+            height: 40px;
+            width: 155px;
+            background-color: orange;
+            color: white;
+            border-radius: 50px;
+            border-style: none;
+            margin-left: 46px;
+            font-size: 17px;
+
+        }
+
+        .bottomhead button {
+            margin-top: 30px;
+            margin-left: 0;
+        }
+
+        .icons i {
+            margin-top: 100px;
+
+        }
+
+        .topsection {
+            width: 80%;
+            margin: auto;
+            margin-top: 200px;
+            color: white;
+            font-size: 17px;
+
+        }
+
+        .left {
+            float: left;
+            width: 48%;
+            height: 215px;
+            border-radius: 7px;
+            background-color: #111213;
+        }
+
+
+        .topleft img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 4px solid orange;
+            margin: 22px;
+        }
+
+        .topright {
+            float: right;
+            margin-top: -180px;
+            margin-right: 150px;
+        }
+
+        .topright h3 {
+            font-family: "Sofia", sans-serif;
+        }
+
+        .topright h2 {
+            font-family: "Sofia", sans-serif;
+            font-size: 35px;
+        }
+
+        .topright sub {
+            font-family: "Sofia", sans-serif;
+        }
+
+        .topright button {
+            margin: 20px 0px;
+        }
+
+        .right {
+            float: right;
+            width: 48%;
+            height: 215px;
+            border-radius: 7px;
+            background-color: #111213;
+        }
+
+
+
+        .bottomleft img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            border: 4px solid orange;
+            margin: 14px;
+            margin: 22px;
+        }
+
+        .bottomright {
+            float: right;
+            margin-top: -180px;
+            margin-right: 150px;
+
+
+        }
+
+        .bottomright h3 {
+            font-family: "Sofia", sans-serif;
+        }
+
+        .bottomright h2 {
+            font-family: "Sofia", sans-serif;
+            font-size: 35px;
+        }
+
+        .bottomright sub {
+            font-family: "Sofia", sans-serif;
+        }
+
+        .bottomright button {
+            margin: 20px 0px;
+        }
+
+
+
+
+
+        .upperdiv {
+            margin-top: 500px;
+        }
+
+        .bottom {
+            width: 80%;
+            margin: auto;
+
+
+        }
+
+        .upperdiv h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-family: "Sofia", sans-serif;
+
+
+        }
+
+
+
+        ol {
+            height: 40px;
+
+
+
+
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ol li a {
+            color: black;
+        }
+
+        ol li a {
+
+            color: black;
+
+            height: 40px;
+            width: 80px;
+            border-radius: 20px;
+            padding: 11px 20px;
+            margin: 10px;
+
+        }
+
+        ol li.first a {
+
+            background-color: black;
+            padding-left: 31px;
+            color: white;
+
+
+        }
+
+        ol li:hover a {
+            color: white;
+        }
+
+        .topbottom {
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .boxes {
+            width: 31%;
+            border-radius: 20px;
+            height: 500px;
+            background-color: #111213;
+
+        }
+
+        .boxtop {
+            height: 250px;
+            background-color: rgb(207, 205, 205);
+            border-radius: 20px 20px 0 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .boxtop img {
+            width: 170px;
+
+
+
+
+
+        }
+
+        .boxbottom {
+            width: 80%;
+            margin: auto;
+            height: 250px;
+            color: white;
+            padding-top: 25px;
+        }
+
+
+
+
+        .boxbottom p {
+            font-size: 16px;
+            padding-top: 10px;
+            line-height: 25px;
+        }
+
+        .boxbottom h3 {
+            font-size: 18px;
+            padding-top: 50px;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background-color: orange;
+            padding: 13px;
+            float: right;
+            margin-top: -40px;
+        }
+
+        .circle i {
+            font-size: 19px;
+        }
+
+        .thirdsection button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 45px;
+
+        }
+
+        .details {
+            width: 80%;
+            margin: auto;
+            height: 700px;
+            margin-top: 70px;
+            background-color: #111213;
+        }
+
+
+
+        .detailsleft {
+            width: 50%;
+            float: left;
+        }
+
+        .detailsleft img {
+            width: 370px;
+            height: 530px;
+            float: right;
+            margin-top: 80px;
+        }
+
+        .left2 {
+            width: 80%;
+            margin: auto;
+        }
+
+        .detailsright {
+            width: 50%;
+            height: 700px;
+
+            color: white;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right2 {
+            width: 80%;
+
+        }
+
+        .detailsright h1 {
+            font-size: 30px;
+            font-family: "Sofia", sans-serif;
+        }
+
+        .detailsright p {
+            padding-top: 20px;
+            line-height: 22px;
+        }
+
+
+        .detailsright button {
+
+            margin-top: 40px;
+            margin-left: 0px;
+        }
+
+
+
+
+
+
+        .leftrightdiv {
+            width: 80%;
+            margin: auto;
+            height: 665px;
+
+        }
+
+        .leftdiv {
+            width: 50%;
+            margin: auto;
+            float: left;
+            margin-top: 70px;
+        }
+
+        .leftdiv h1 {
+            font-size: 32px;
+            font-family: "Sofia", sans-serif;
+            margin-bottom: 24px;
+        }
+
+        .two {
+            width: 100%;
+            float: right;
+            position: relative;
+
+
+        }
+
+        .two i {
+            position: absolute;
+            bottom: 16px;
+            right: 85px;
+            font-size: 18px;
+        }
+
+        .forms {
+
+            height: 75px;
+
+        }
+
+        input[type=text] {
+            width: 90%;
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 7px;
+        }
+
+        #items {
+            width: 90%;
+            height: 50px;
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 7px;
+        }
+
+        form button {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+
+        .rightdiv {
+            width: 50%;
+            margin: auto;
+            float: right;
+            margin-top: 144px;
+            height: 250px;
+        }
+
+        .map {
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            height: 350px;
+            background-color: #111213;
+            color: white;
+        }
+
+        .bottom2 {
+            width: 60%;
+            margin: auto;
+            height: 350px;
+
+            display: flex;
+            flex-direction: row;
+            column-gap: 6%;
+
+        }
+
+        .footleft {
+            width: 39%;
+            height: 350px;
+            margin-top: 80px;
+            line-height: 40px;
+        }
+
+        .footleft h3 {
+            font-size: 25px;
+            font-family: "Sofia", sans-serif;
+        }
+
+
+        .footcenter {
+            width: 29%;
+            height: 350px;
+            margin-top: 80px;
+
+        }
+
+        .footcenter h3 {
+            font-size: 25px;
+            font-family: "Sofia", sans-serif;
+        }
+
+        .footcenter p {
+            line-height: 20px;
+        }
+
+        .footicons {
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .ficons {
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            border-radius: 50%;
+            color: black;
+            font-size: 20px;
+            padding: 6px;
+        }
+
+
+
+
+        .footright {
+            width: 29%;
+            height: 350px;
+            margin-top: 80px;
+
+
+        }
+
+        .footright h4 {
+            font-size: 25px;
+            font-family: "Sofia", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <header>
+            <img src="banner (1).jpg">
+            <div class="tophead">
+                <ul>
+                    <li class="heading">Hardees</li>
+
+                    <li class="list"><a href="home.asp">HOME</a></li>
+                    <li><a href="menu.asp">MENU</a></li>
+                    <li><a href="about.asp">ABOUT</a></li>
+                    <li><a href="book table.asp">BOOK TABLE</a></li>
+
+                    <li><i class="fa-solid fa-user"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><i class="fas fa-search"></i></li>
+                    <button>Order Online</a></button>
+
+                </ul>
+            </div>
+            <div class="bottomhead">
+                <p class="name">Fast Food Restaurant
+                <p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit <br>quis quibusdam iste qui
+                    reprehenderit soluta, consectetur nam debitis <br> accusantium beatae, possimus suscipit, minima
+                    sint?</p>
+                <button>Order Now</button>
+                <div class="icons"></div>
+                <i class="fa-solid fa-circle" style="font-size: 13px; margin-top: 130px; "></i>
+                <i class="fa-solid fa-circle" style="font-size: 13px;"></i>
+                <i class="fa-solid fa-circle" style="font-size: 20px; color: orange;"></i>
+            </div>
+    </div>
+    </header>
+    <section class="topsection">
+        <div class="left">
+            <div class="topleft">
+                <img src="menu_2 (1).png">
+            </div>
+            <div class="topright">
+                <h3>Tasty Thursdays</h3>
+                <h2>20% <sub> Off</sub></h2>
+                <button>Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="bottomleft">
+                <img src="order_2 (2).jpg">
+            </div>
+            <div class="bottomright">
+                <h3>Pizza Days</h3>
+                <h2>15% <sub> Off</sub></h2>
+                <button>Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="thirdsection">
+
+        <div class="upperdiv">
+            <h1>Our Menu</h1>
+        </div>
+        <div class="lowerdiv">
+            <div class="lowernavbar">
+                <ol>
+                    <li class="first"><a href="All.asp">All</a></li>
+                    <li><a href="Burger.asp">Burger</a></li>
+                    <li><a href="Pizza.asp">Pizza</a></li>
+                    <li><a href="Pasta.asp">Pasta</a></li>
+                    <li><a href="Fries.asp">Fries</a></li>
+
+                </ol>
+            </div>
+            <div class="bottom">
+                <div class="topbottom">
+                    <div class="boxes">
+                        <div class="boxtop">
+                            <img src="menu_1 (1).png">
+                        </div>
+                        <div class="boxbottom">
+                            <h2>Delicious Pizza</h2>
+                            <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                                magnam voluptatem repellendus sed eaque</p>
+                            <h3>$20</h3>
+                            <div class="circle"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="boxtop">
+                            <img src="menu_2 (1).png">
+                        </div>
+                        <div class="boxbottom">
+                            <h2>Delicious Burger</h2>
+                            <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                                magnam voluptatem repellendus sed eaque</p>
+                            <h3>$20</h3>
+                            <div class="circle"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="boxtop">
+                            <img src="menu_3 (1).png">
+                        </div>
+                        <div class="boxbottom">
+                            <h2>Delicious Pizza</h2>
+                            <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                                magnam voluptatem repellendus sed eaque</p>
+                            <h3>$20</h3>
+                            <div class="circle"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbottom">
+                    <div class="boxes">
+                        <div class="boxtop">
+                            <img src="menu_4 (1).png">
+                        </div>
+                        <div class="boxbottom">
+                            <h2>Delicious Pasta</h2>
+                            <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                                magnam voluptatem repellendus sed eaque</p>
+                            <h3>$20</h3>
+                            <div class="circle"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="boxtop">
+                            <img src="menu_5 (1).png">
+                        </div>
+                        <div class="boxbottom">
+                            <h2>French Fries</h2>
+                            <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                                magnam voluptatem repellendus sed eaque</p>
+                            <h3>$20</h3>
+                            <div class="circle"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="boxtop">
+                            <img src="menu_6 (1).png">
+                        </div>
+                        <div class="boxbottom">
+                            <h2>Delicious Pizza</h2>
+                            <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                                magnam voluptatem repellendus sed eaque</p>
+                            <h3>$20</h3>
+                            <div class="circle"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>View More</button>
+
+    </section>
+    <section class="details">
+        <div class="detail">
+            <div class="detailsleft">
+                <div class="left2">
+                    <img src="about-img (1).png">
+                </div>
+            </div>
+            <div class="detailsright">
+                <div class="right2">
+                    <h1>We Are Hardees</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randimised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All
+                    </p>
+
+                    <button>Read More</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="inputmap">
+        <div class="leftrightdiv">
+            <div class="leftdiv">
+                <h1>Book A Table</h1>
+                <form action="backend.php" autocomplete="on">
+                    <div class="forms">
+                        <div class="two"><input type="text" id="fname" name="fname" value="Your Name"></div>
+                    </div>
+                    <div class="forms">
+                        <div class="two"><input type="text" id="fname" name="fname" value="Phone Number"></div>
+                    </div>
+                    <div class="forms">
+                        <div class="two"><input type="text" id="fname" name="fname" value="Your Email"></div>
+                    </div>
+                    <div class="forms">
+                        <div class="two"><select id="items">
+                                <option value="how many persons? selected">How many persons?</option>
+                                <option value="four">four</option>
+                                <option value="six">six</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <div class="two"><input type="text" id="fname" name="fname" value="mm/dd/yyy"><i
+                                class="fa-solid fa-calendar"></i></div>
+                    </div>
+
+                    <button>Book Now</button>
+
+                </form>
+            </div>
+            <div class="rightdiv">
+                <div class="map">
+                    <p><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435519.2355858524!2d74.00404474031008!3d31.483101904998005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1695613046808!5m2!1sen!2s"
+                            width="590" height="350" style="border-radius: 15px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bottom2">
+            <div class="footleft">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Location</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> Call +01 1234567890</p>
+                <p><i class="fa-solid fa-envelope"></i> emo@gamil.com</p>
+            </div>
+            <div class="footcenter">
+                <h3>Hardees</h3>
+                <p>Necessary, making this the first true generator <br> on the Internet. It uses a dictionary of over
+                    200
+                    <br> Latin words, combined with
+                </p>
+                <div class="footicons">
+                    <div class="ficons"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="ficons"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="ficons"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="ficons"><i class="fa-brands fa-instagram"></i></i></div>
+                    <div class="ficons"><img src="p image.png" style="height: 15px; width: 15px;"></div>
+                </div>
+                <p>© 2023 All Rights Reserved by</p>
+                <p>© Distributed By Hardees</p>
+            </div>
+            <div class="footright">
+                <h4>Opening Hours</h4>
+                <p>10:11 Am - 10:00 Pm</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
